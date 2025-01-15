@@ -1,0 +1,8 @@
+<!-- res/drawable/custom_thumb.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/thumb_pressed_off" /> <!-- Custom pressed state drawable -->
+<!--    <item android:drawable="@drawable/thumb_default" /> &lt;!&ndash; Default state drawable &ndash;&gt;-->
+    <item android:drawable="@drawable/thumb_pressed_off" /> <!-- Default state drawable -->
+</selector>
+

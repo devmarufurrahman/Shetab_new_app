@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <!-- ViewModel for data binding -->
+        <variable
+            name="viewModel"
+            type="com.shetab.main.ui.viewmodel.AttendanceViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white"
+        tools:context=".ui.activity.AttendanceActivity"
+        >
+
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/abbas"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Abbas"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_border_dark_radius_10" />
+
+        <!-- User Name -->
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.userName}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="8dp"
+            android:textColor="@color/black" />
+
+        <!-- Designation -->
+        <TextView
+            android:id="@+id/tvDesignation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.designation}"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="@color/gray07" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray04"
+            android:layout_marginVertical="8dp" />
+
+        <!-- Current Location -->
+        <TextView
+            android:id="@+id/tvCurrentLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.currentLocation}"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/black" />
+
+
+        <!-- Current Location -->
+        <TextView
+            android:id="@+id/officeLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.officeLocation}"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/black" />
+
+        <!-- In Time -->
+        <TextView
+            android:id="@+id/tvInTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.inTime}"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/black" />
+
+        <!-- Out Time -->
+        <TextView
+            android:id="@+id/tvOutTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.outTime}"
+            android:textSize="14sp"
+            android:padding="4dp"
+            android:textColor="@color/black" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray04"
+            android:layout_marginVertical="8dp" />
+
+        <!-- Buttons: In Time and Out Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <!-- In Time Button -->
+            <Button
+                android:id="@+id/btnInTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="In Time"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp" />
+
+            <!-- Out Time Button -->
+            <Button
+                android:id="@+id/btnOutTime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Out Time"
+                android:backgroundTint="@color/app_orange"
+                android:textColor="@color/white"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

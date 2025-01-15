@@ -1,0 +1,278 @@
+<resources>
+    <string name="app_name">Shetab</string>
+    <string name="profile">Profile</string>
+    <string name="faq">Faq</string>
+    <string name="attendance">Attendance</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="shetablogo">SheTabLogo</string>
+    <string name="remember_me">Remember me</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="client_id">606199356156-mmvmlert8ktfr5pohqdpvk98an32afi9.apps.googleusercontent.com</string>
+    <string name="client_id_web">975642582929-39bfuuv4bimep8l2cslhgori7c9s1005.apps.googleusercontent.com</string>
+    <string name="todo">TODO</string>
+    <string name="todo2">TODO</string>
+    <string name="password">Password</string>
+    <string name="default_password">aA34567!</string>
+    <string name="forget_your_password">Forget your password ?</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="title_activity_dashboard">DesboardActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="shetab">Shetab</string>
+    <string name="shetabEmail">info@shetab.tech</string>
+    <string name="account">Account</string>
+    <string name="apply_visa">Apply Visa</string>
+    <string name="appointment">Appointment</string>
+    <string name="book_appointment">Book Appointment</string>
+    <string name="help">Help</string>
+    <string name="about_us">About Us</string>
+    <string name="register">Register</string>
+    <string name="our_s_title1">Labor Placement</string>
+    <string name="our_s_title2">Student Placement</string>
+    <string name="our_s_title3">Tourist Visa Consultancy</string>
+    <string name="we_are_a_dedicated">We are a dedicated consultancy firm specializing in sending labor and students abroad. Our mission is to bridge the gap between dreams and reality by connecting individuals to global opportunities. With a strong focus on professionalism and quality, we aim to empower our clients to achieve their goals and realize their full potential.</string>
+
+    <string name="arafat_feedback">"Thank you Shetab for your brilliant work and getting me an offer letter so quickly. Couldn't have done it without your tremendous support!"</string>
+    <string name="hamim_feedback">"Shetab made my dream of getting into an undergrad program a reality, complete with a $5,000 scholarship. Many many thanks, Shetab ❤"</string>
+    <string name="bayzid_feedback">"I am overjoyed and extremely thankful to SHETAB for securing my admission to my dream university for an undergrad in CS along with a $20,000 scholarship. Their exceptional support made this incredible opportunity possible."</string>
+    <string name="sharoni_feedback">"I am extremely thankful to SHETAB for helping me get into my dream university for a PhD in CS, that too without a master's and without any publications! Their guidance made the impossible possible—thank you, SHETAB!"</string>
+
+
+    <string name="abt_us_des4">We have hired a very selective pool of experts to help guide our clients with all their visa queries. Our diligence has allowed us to maintain an exceptionally high visa ratio.</string>
+    <string name="abt_us_des3">Our experience in the European job markets sets us apart when it comes to guiding our clients in terms of securing their dream jobs in Europe. Our experts continue to help countless clients with their desired placements.</string>
+    <string name="abt_us_des2">Our expertise in research is one of the key things that set us apart. We make sure to hire people with a heavy research background so that they can expertly guide our clients with research proposals and research articles.</string>
+    <string name="abt_us_des1">We are amongst some of the few consultancy firms in the entire country that help clients secure full funding at some of the most prestigious universities in the world. Our clients have gotten into Ivy League universities like Harvard and Columbia.</string>
+
+    <string name="our_s_des1">We provide reliable job placement services for skilled and unskilled labor abroad. We assist with work permits, visas, and medical clearances.</string>
+    <string name="our_s_des2">We assist students in securing admissions for bachelors, masters, and PhD programs abroad. Our services include test preparation (GRE, GMAT, TOEFL, IELTS, SAT), securing scholarships, research paper writing assistance, and student visa processing.</string>
+    <string name="our_s_des3">We provide expert guidance and support for obtaining tourist visas to various destinations.</string>
+
+    <string name="company">Company</string>
+    <string name="user_profile">User Profile</string>
+    <string name="setting">Settings</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="our_services">Our services</string>
+
+    <string name="abt_us_title1">Specialists in PhD</string>
+    <string name="abt_us_title2">Experts in Research</string>
+    <string name="abt_us_title3">Experts in European job market</string>
+    <string name="abt_us_title4">Experts in Visa Assistance</string>
+
+    <string name="sharoni">Sharoni</string>
+    <string name="bayzid">Bayzid</string>
+    <string name="hamim">Hamim</string>
+    <string name="arafat">Arafat</string>
+
+    <string name="sort_msg">We provide reliable job placement</string>
+
+    <string name="ok">ok</string>
+    <string name="profile_management">Profile Management</string>
+    <string name="feedback">Feedback</string>
+    <string name="insert_feedback">Insert feedback</string>
+    <string name="support_and_communication">Support and Communication</string>
+    <string name="application_management">Application Management</string>
+    <string name="user_name">User name</string>
+    <string name="username_gmail_com">username@gmail.com</string>
+    <string name="top_bar">Top Bar</string>
+    <string name="live_chat">Live chat</string>
+    <string name="full_name">Full name</string>
+    <string name="phone_no">Phone numner</string>
+    <string name="address">Address</string>
+    <string name="save">Save</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="do_you_have_account">Do you have account?</string>
+    <string name="submit">Submit</string>
+    <string name="message">Message</string>
+    <string name="sign_in">Sign In</string>
+    <string name="manage_feedback">Manage Feedback</string>
+    <string name="accept">Accept</string>
+    <string name="youremail_gmail_com">youremail@gmail.com</string>
+    <string name="dot">*</string>
+    <string name="otp">OTP</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="_880_xxxxxxxxxx">+880 XXXXXXXXXX</string>
+    <string name="the_email_is_valid">The email is valid.</string>
+    <string name="the_email_is_not_valid">The email is not valid.</string>
+    <string name="_01712345678">01712345678</string>
+    <string name="_017xxxxxxxx">01XXXXXXXXX</string>
+    <string name="phone_no_is_valid">Phone no is valid.</string>
+    <string name="phone_no_is_not_valid">Phone no is not valid.</string>
+    <string name="minimum_one_small_letter">Must be at least 8 Character! Minimum 1 Capital Case, 1 Small Case, 1 Special Character and 1 digit!</string>
+    <string name="strong_password">Strong password</string>
+    <string name="weak_password">Weak password</string>
+    <string name="password_match">Password match</string>
+    <string name="password_not_match">Password not match</string>
+    <string name="all_transcript"><![CDATA[All Transcript & Certificate]]></string>
+    <string name="your_answer">your answer</string>
+    <string name="select_a_date">Select a date</string>
+    <string name="blank" />
+    <string name="apply_visa_for_student">Apply Visa For Student</string>
+    <string name="upload_your_photo">Upload your photo</string>
+    <string name="upload_your_passport">Upload your passport</string>
+    <string name="upload_your_resume">Upload your resume</string>
+    <string name="enter_your_email">Enter your email.</string>
+    <string name="enter_last_name">Enter last name.</string>
+    <string name="enter_first_name">Enter first name.</string>
+    <string name="select_account_type">Select account type</string>
+    <string name="account_type">Account Type</string>
+    <string name="if_you_have_an_account">If you have an account!</string>
+    <string name="enter_valid_email_address">Enter valid email address</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="enter_strong_password">Enter strong password</string>
+    <string name="enter_strong_password2">The password is</string>
+    <string name="abt_us_main_des">We are a dedicated consultancy firm specializing in sending labor and students abroad. Our mission is to bridge the gap between dreams and reality by connecting individuals to global opportunities. With a strong focus on professionalism and quality, we aim to empower our clients to achieve their goals and realize their full potential.</string>
+    <string name="enter_your_full_name">Enter your full name</string>
+    <string name="enter_your_date_of_birth">Enter your date of birth</string>
+    <string name="enter_your_home_address">Enter your home address</string>
+    <string name="marital_status">Marital Status</string>
+    <string name="home_address">Home Address</string>
+    <string name="student">Student</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change_password">Change Password</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="upload_your_ssc_certificate">Upload Your SSC Certificate</string>
+    <string name="upload_your_hsc_certificate">Upload Your HSC Certificate</string>
+    <string name="upload_your_resume2">Upload Your Resume</string>
+    <string name="upload_your_passport2">Upload Your Passport</string>
+    <string name="upload_your_photo2">Upload Your Photo</string>
+    <string name="visa_status">Visa Status</string>
+    <string name="visa_progress">Visa Progress</string>
+    <string name="new_password">New password</string>
+    <string name="msg_1">Would love to hear all about it, maybe over coffee or a call sometime soon. Let me know when you\'re free!</string>
+    <string name="msg_2">I know you\'\'ve been ignored before by a woman you sent a message on Tinder, FB, WhatsApp etc. She refused to reply. Why? I\'\'ll reveal it to you.</string>
+    <string name="write_a_message">Write a message</string>
+    <string name="team_member">Team Member</string>
+
+    <string name="faq_qes_1">How do I register for the app?</string>
+    <string name="faq_ans_1">    android:text="Open the app and click on the &quot;<b>Register</b>&quot; button on the login screen."</string>
+    <string name="faq_ans_11">Open the app and click on the &quot;<b>Register</b>&quot; button on the login screen.</string>
+    <string name="faq_ans_12">Fill in your details such as <b>name</b>, <b>email</b>, <b>password</b>, and <b>phone number</b>.</string>
+    <string name="faq_ans_13">Click &quot;<b>Submit</b>&quot; and you will receive a verification email.</string>
+    <string name="faq_ans_14">Verify your email to activate your account, and you’re ready to log in!</string>
+
+
+    <string name="faq_qes_2">How do I apply for a visa using the app?</string>
+    <string name="faq_ans_21">Navigate to the &quot;<b>Apply Visa</b>&quot; section in the app’s menu.</string>
+    <string name="faq_ans_22">Choose the <b>visa type</b> and <b>destination country</b>.</string>
+    <string name="faq_ans_23">Complete the application form by filling in required details such as <b>passport number</b>, <b>personal information</b>, and <b>supporting documents</b>.</string>
+    <string name="faq_ans_24">Submit your application and you will receive a confirmation and application ID for tracking your status.</string>
+
+
+    <string name="faq_qes_3">How can I check the progress of my visa application?</string>
+
+    <string name="faq_ans_31">Go to the &quot;<b>Visa Progress Status</b>&quot; section in the app.</string>
+    <string name="faq_ans_32">Enter your <b>application ID</b> or use the track my application option.</string>
+    <string name="faq_ans_33">You will see the current progress of your application (e.g., pending, in process, approved, or rejected) along with estimated processing times.</string>
+
+
+    <string name="faq_qes_4">Navigate to the &quot;<b>Client Feedback</b>&quot; section in the app.</string>
+
+    <string name="faq_ans_41">Navigate to the &quot;<b>Client Feedback</b>&quot; section in the app.</string>
+    <string name="faq_ans_42">You will be able to see feedback left by other clients.</string>
+    <string name="faq_ans_43">To leave your feedback, click on &quot;<b>Give Feedback</b>&quot;, rate the service, and write your comments.</string>
+    <string name="faq_ans_44">Once submitted, your feedback will be reviewed and displayed in the feedback section.</string>
+
+
+    <string name="faq_qes_5">What should I do if I can’t log in to my account?</string>
+
+    <string name="faq_ans_51">Make sure you are using the correct email and password.</string>
+    <string name="faq_ans_52">If you forgot your password, click on &quot;<b>Forgot Password?</b>&quot; on the login screen.</string>
+    <string name="faq_ans_53">Enter your registered email and follow the instructions sent to your inbox to reset your password.</string>
+    <string name="faq_ans_54">If the problem persists, contact our support team via the &quot;<b>Help &amp; Support</b>&quot; section in the app for further assistance.</string>
+
+
+    <string name="com_policy1"><b>Work Hours:</b> Office hours are mandatory from 10:00 AM to 06:00 PM, Sunday to Thursday. Unexcused lateness or absences will result in a proportional deduction from your salary.</string>
+    <string name="com_policy2"><b>Behavior Respect:</b> Treat everyone with respect. No tolerance for harassment. Integrity: Always act ethically and honestly.</string>
+    <string name="com_policy3"><b>Communication Internal:</b> Use email or internal chat for communication. External: Maintain professionalism with clients.</string>
+    <string name="com_policy4"><b>Equipment Use Company Property:</b> Use company equipment responsibly.Internet: Use the internet for work-related activities only.</string>
+    <string name="com_policy51"><b>Annual Leave:</b> You are entitled to 12 days of paid annual leave. The scheduling of your leave days will be subject to approval by your supervisor.</string>
+    <string name="com_policy52"><b>Sick Leave:</b> Employees are eligible for up to 4 consecutive days of paid sick leave, requiring notification to their supervisor before their shift starts and a medical certificate if absent for more than two days.</string>
+    <string name="com_policy6"><b>Performance Reviews:</b> Performance reviews are conducted annually. Feedback: Open to feedback and opportunities for growth.</string>
+    <string name="com_policy7"><b>Confidentiality Privacy:</b> Keep company and client information private.Data Security: Follow data protection protocols.</string>
+    <string name="com_policy8"><b>Provident Fund:</b> Your monthly salary will include a compulsory Provident Fund contribution, which is a retirement benefit scheme. Both you and the company will contribute a fixed amount of your basic salary to this fund.</string>
+    <string name="com_policy9"><b>Gratuity Benefit:</b> Eligible for gratuity payment in accordance with the company’s policy after completing a minimum period of service.</string>
+    <string name="com_policy10"><b>Festival Bonus:</b> You will be entitled to two festival bonuses each year, as per company policy.</string>
+    <string name="com_policy11"><b>Annual Company Trip:</b> We organize a company trip every year to help employees relax and build team spirit. Participation is encouraged.</string>
+    <string name="com_policy12"><b>Public Holidays:</b> You are entitled to all government holidays.</string>
+    <string name="com_policy13"><b>Policy Enforcement:</b> Violating these policies may lead to disciplinary actions. We reserve the right to update these policies and will inform everyone of any changes.</string>
+
+
+    <string name="termConTopText">Welcome to [Company Name]! By using our services, you agree to the following <![CDATA[Terms & Conditions]]>. Please read these terms carefully, as they govern your use of our visa processing services (for students, workers, and tourists) and IT/software development services.</string>
+    <string name="termCon1">By accessing or using our services, you agree to comply with and be bound by these <![CDATA[Terms & Conditions]]>, as well as our Privacy Policy. If you do not agree with these terms, please refrain from using our services.</string>
+
+    <string name="termCon21"><b>Visa Processing Services:</b> Assisting individuals with visa applications for study, work, or tourism purposes.</string>
+    <string name="termCon22"><b>IT/Software Development Services:</b> Offering custom software development, support, and maintenance.</string>
+
+    <string name="termCon3">You must be at least 18 years old and legally able to enter into a binding contract to use our services. By using our services, you represent that you meet this eligibility requirement.</string>
+
+    <string name="termCon41">Provide accurate, complete, and up-to-date information during the visa application process or when engaging our IT services.</string>
+    <string name="termCon42">Follow all applicable laws and regulations in relation to your visa application or project development.</string>
+    <string name="termCon43">Pay any fees or charges associated with the services in a timely manner.</string>
+    <string name="termCon44">Refrain from using our services for any unlawful or prohibited activities.</string>
+
+    <string name="termCon51"><b>Application Assistance:</b> [Company Name] provides assistance in preparing and submitting visa applications. However, the outcome of visa applications is determined solely by the relevant immigration authorities.</string>
+    <string name="termCon52"><b>No Guarantee of Success:</b> While we strive to offer expert guidance, we cannot guarantee that your visa application will be approved.</string>
+    <string name="termCon53"><b>Processing Time:</b> Visa processing times vary depending on the country and the type of visa being applied for. We will provide you with an estimated processing time, but we are not responsible for any delays caused by government authorities.</string>
+
+    <string name="termCon61"><b>Project Scope:</b> Before commencing any software development project, we will agree on the scope, timeline, and costs with you. Any changes to the scope of work may result in additional charges.</string>
+    <string name="termCon62"><b>Intellectual Property:</b> Upon completion and payment of the project, all intellectual property rights related to the software developed will be transferred to you, unless otherwise agreed in writing.</string>
+    <string name="termCon63"><b>Service Availability:</b> We aim to ensure that our software services are available and functional at all times, but we cannot guarantee uninterrupted access due to factors beyond our control.</string>
+
+    <string name="termCon71">You agree to pay the agreed-upon fees for our services, as outlined in your service agreement or invoice.</string>
+    <string name="termCon72"><b>Refunds:</b> Visa processing fees and IT service fees are non-refundable once services have been rendered, unless otherwise agreed upon.</string>
+    <string name="termCon73"><b>Late Payments:</b> Any late payments may incur additional charges or penalties.</string>
+
+    <string name="termCon81"><b>For Visa Processing:</b> You may cancel your visa application service at any time, but fees paid are non-refundable once the process has started.</string>
+    <string name="termCon82"><b>For IT Services:</b> Either party may terminate a software development contract if the other party fails to meet agreed terms or obligations. Termination must be provided in writing. Upon termination, all work completed up to the termination date must be paid for.</string>
+
+    <string name="termCon91">Delays or failures in visa approval or processing, as these are the sole responsibility of government authorities.</string>
+    <string name="termCon92">Any indirect, incidental, or consequential damages resulting from the use of our IT services, including software bugs, system outages, or security breaches.</string>
+    <string name="termCon93">Any loss, damage, or failure that arises from your failure to provide accurate information or adhere to legal requirements.</string>
+
+    <string name="termCon10">All services provided by SheTab are on an "as-is" and "as-available" basis. We do not make any warranties, express or implied, including warranties of accuracy, reliability, or fitness for a particular purpose.</string>
+    <string name="termCon11">All content, including text, graphics, logos, images, and software, provided by SheTab is protected by copyright and other intellectual property laws. You may not reproduce, distribute, or modify any content from our website or services without our prior written consent.</string>
+    <string name="termCon12">These <![CDATA[Terms & Conditions]]> shall be governed and interpreted in accordance with the laws of [Country]. Any disputes arising out of or in connection with these terms will be subject to the exclusive jurisdiction of the courts in Bangladesh.</string>
+    <string name="termCon13">We reserve the right to update or modify these <![CDATA[Terms & Conditions]]> at any time without prior notice. It is your responsibility to review these terms periodically. Continued use of our services following any changes constitutes your acceptance of the new terms.</string>
+
+
+    <string name="collapse">Collapse</string>
+    <string name="accountandsecurity"><![CDATA[Account & Security]]></string>
+    <string name="securityandauthentications"><![CDATA[Security & Authentications]]></string>
+    <string name="termsandconditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="account_information">Account Information</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="location">Location</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="acceptance_of_terms">Acceptance of Terms</string>
+    <string name="it_software_development_services"><![CDATA[IT & Software Development Services]]></string>
+    <string name="visa_processing_services">Visa Processing Services</string>
+    <string name="cancellation_termination"><![CDATA[Cancellation & Termination]]></string>
+    <string name="light_theme">Light Theme</string>
+    <string name="dark_theme">Dark Theme</string>
+    <string name="general">General</string>
+    <string name="appointment_status">Appointment status</string>
+    <string name="manage_appointment">Manage Appointment</string>
+    <string name="my_applications">My Applications</string>
+    <string name="manage_application">Manage Application</string>
+    <string name="my_applicant_s_agent">My applicant\'s - agent</string>
+    <string name="activity_log">Activity log</string>
+    <string name="back">back</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

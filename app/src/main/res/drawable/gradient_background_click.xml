@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+android:color="@color/ripple_material_light"> <!-- Ripple color -->
+
+<item android:id="@android:id/mask">
+    <shape >
+        <gradient
+            android:startColor="#EDF3F8"
+            android:endColor="#DDE1F1"
+            android:angle="270" /> <!-- 270 degrees for a vertical gradient -->
+    </shape>
+</item>
+
+<item>
+    <selector>
+        <item>
+            <shape android:shape="rectangle">
+                <solid android:color="@android:color/transparent" /> <!-- Background of the ripple -->
+            </shape>
+        </item>
+    </selector>
+</item>
+
+</ripple>

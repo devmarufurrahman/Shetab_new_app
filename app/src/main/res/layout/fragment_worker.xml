@@ -1,0 +1,1586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <!-- Main Content -->
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingBottom="24dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp">
+
+
+                <LinearLayout
+                    android:id="@+id/fragmentBodyWorker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_halka"
+                    android:padding="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Worker Visa"
+                        android:layout_marginBottom="20dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_orange"
+                        android:textSize="22sp" />
+
+
+                    <!--                    Name-->
+                    <LinearLayout
+                        android:id="@+id/fullNameLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewFullName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Full Name"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/applyVisaName"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:autofillHints=""
+                                android:background="@drawable/bg_border_gray_radius_10"
+                                android:hint="@string/full_name"
+                                android:textColor="@color/black"
+                                android:textColorHint="@color/hint_color"
+                                android:inputType="text"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="16sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="153dp" />
+
+                            <ImageView
+                                android:id="@+id/applyVisaNameCloseIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:padding="8dp"
+                                android:visibility="gone"
+                                android:background="@drawable/ripple_effect"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_close_orange" />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    <!--                    Date of Birth-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewDateOfBirth"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Date of Birth"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <!--                            <TextView-->
+                            <!--                                android:id="@+id/edtTextFirstName"-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="45dp"-->
+                            <!--                                android:autofillHints=""-->
+                            <!--                                android:gravity="center|left"-->
+                            <!--                                android:background="@drawable/bg_border_gray_radius_10"-->
+                            <!--                                android:hint="dd-mm-yyyyy"-->
+                            <!--                                android:textColor="@color/black"-->
+                            <!--                                android:textColorHint="@color/grey_font"-->
+                            <!--                                android:paddingStart="10dp"-->
+                            <!--                                android:paddingEnd="0dp"-->
+                            <!--                                android:textSize="16sp"-->
+                            <!--                                app:layout_constraintEnd_toEndOf="parent"-->
+                            <!--                                app:layout_constraintHorizontal_bias="1.0"-->
+                            <!--                                app:layout_constraintStart_toStartOf="parent"-->
+                            <!--                                tools:layout_editor_absoluteY="153dp" />-->
+
+
+                            <TextView
+                                android:id="@+id/applyVisaDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_border_gray_radius_10"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:gravity="center|left"
+                                android:hint="@string/select_a_date"
+                                android:textColorHint="@color/hint_color"
+                                android:inputType="none"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textColor="@color/black"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/applyVisaCalenderIcon"
+                                android:layout_width="50dp"
+                                android:layout_height="45dp"
+                                android:padding="10dp"
+                                android:background="@drawable/ripple_effect"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="visible"
+                                android:src="@drawable/ic_calendar" />
+
+                            <ImageView
+                                android:id="@+id/applyVisaCloseIcon"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:padding="10dp"
+                                android:background="@drawable/ripple_effect"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:visibility="gone"
+                                android:src="@drawable/ic_close_orange" />
+
+                        </RelativeLayout>
+
+
+
+                    </LinearLayout>
+
+                    <!--                    Marital status-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewMaritalStatus"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Marital Status"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="220dp">
+
+
+                            <!--                            <Spinner-->
+                            <!--                                android:id="@+id/applyVisaMaritalStatus"-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="45dp"-->
+                            <!--                                android:background="@drawable/bg_border_gray_radius_10"-->
+                            <!--                                android:textColorHint="@color/grey_font"-->
+                            <!--                                android:textColor="@color/black"-->
+                            <!--                                android:drawableEnd="@drawable/ic_arrow_down_blue"-->
+                            <!--                                android:paddingStart="10dp"-->
+                            <!--                                android:paddingEnd="0dp"-->
+                            <!--                                android:textSize="16sp"/>  -->
+                            <TextView
+                                android:id="@+id/applyVisaMaritalStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_border_gray_radius_10"
+                                android:textColorHint="@color/hint_color"
+                                android:hint="@string/marital_status"
+                                android:text=""
+                                android:gravity="center|left"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:id="@+id/iconArrowDownMaritalStatus"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_arrow_down_orange" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                    Email-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewEmail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Email"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <EditText
+                                    android:id="@+id/applyVisaEmail"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:autofillHints=""
+                                    android:background="@drawable/bg_border_gray_radius_10"
+                                    android:hint="@string/email"
+                                    android:textColorHint="@color/hint_color"
+                                    android:textColor="@color/black"
+                                    android:inputType="textEmailAddress"
+                                    android:paddingStart="10dp"
+                                    android:paddingEnd="0dp"
+                                    android:textSize="16sp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintHorizontal_bias="1.0"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    tools:layout_editor_absoluteY="153dp" />
+
+                                <ImageView
+                                    android:id="@+id/applyVisaEmailCloseIcon"
+                                    android:layout_width="40dp"
+                                    android:layout_height="45dp"
+                                    android:padding="8dp"
+                                    android:visibility="gone"
+                                    android:background="@drawable/ripple_effect"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_centerVertical="true"
+                                    android:src="@drawable/ic_close_orange" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--                    Phone number-->
+                    <LinearLayout
+                        android:id="@+id/id_register_phnNo_lay"
+                        android:layout_width="match_parent"
+                        android:visibility="visible"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/edtTxtEmailView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textViewPhoneNo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Phone Number"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:text="*"
+                                    android:textColor="@color/red1"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <EditText
+                                        android:id="@+id/applyVisaPhnNo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:autofillHints=""
+                                        android:background="@drawable/bg_border_gray_radius_10"
+                                        android:hint="@string/phone_no"
+                                        android:textColorHint="@color/hint_color"
+                                        android:inputType="number"
+                                        android:textColor="@color/black"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="0dp"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="153dp" />
+
+                                    <ImageView
+                                        android:id="@+id/applyVisaPhnNoCloseIcon"
+                                        android:layout_width="40dp"
+                                        android:layout_height="45dp"
+                                        android:padding="8dp"
+                                        android:visibility="gone"
+                                        android:background="@drawable/ripple_effect"
+                                        android:layout_alignParentEnd="true"
+                                        android:layout_centerVertical="true"
+                                        android:src="@drawable/ic_close_orange" />
+
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!--                    Home address-->
+                    <LinearLayout
+                        android:id="@+id/edtTxtPassView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="220dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewHomeAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Home Address"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/applyVisaAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="70dp"
+                                android:autofillHints=""
+                                android:background="@drawable/bg_border_gray_radius_10"
+                                android:hint="@string/address"
+                                android:textColorHint="@color/hint_color"
+                                android:textSize="15sp"
+                                android:maxLines="40"
+                                android:textColor="@color/black"
+                                android:ellipsize="end"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:gravity="start"
+                                android:padding="10dp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="153dp" />
+
+                            <ImageView
+                                android:id="@+id/applyVisaAddressCloseIcon"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:background="@drawable/ripple_effect"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/ic_close_orange" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                    apply to country-->
+                    <LinearLayout
+                        android:id="@+id/applyToCountryLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible"
+                        android:layout_marginTop="20dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewCountryList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Which country you want to apply?"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="220dp">
+
+                            <TextView
+                                android:id="@+id/applyVisaCountryName"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="@drawable/bg_border_gray_radius_10"
+                                android:textColorHint="@color/hint_color"
+                                android:hint="Select a country"
+                                android:text=""
+                                android:gravity="center|left"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="16sp"/>
+
+                            <ImageView
+                                android:id="@+id/iconArrowDownCountryList"
+                                android:layout_width="40dp"
+                                android:layout_height="45dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/ic_arrow_down_orange" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+
+                    <!--All Transcript & Certificate-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:visibility="visible"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewCertificate"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/all_transcript"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text=""
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textViewSSC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="SSC/Dakhil"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:text=""
+                                        android:textColor="@color/red1"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/textViewFileNameSSCLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_border_gray_radius_10_clickable"
+                                    >
+
+                                    <LinearLayout
+                                        android:layout_toStartOf="@+id/uploadSSCLay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <TextView
+                                            android:id="@+id/textViewFileNameSSC"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:text="Upload"
+                                            android:gravity="center|left"
+                                            android:maxLines="1"
+                                            android:ellipsize="middle"
+                                            android:textColor="@color/hint_color"
+                                            android:paddingStart="10dp"
+                                            android:paddingEnd="0dp"
+                                            android:textSize="16sp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            tools:layout_editor_absoluteY="153dp" />
+
+                                    </LinearLayout>
+
+
+                                    <LinearLayout
+                                        android:id="@+id/uploadSSCLay"
+                                        android:layout_width="60dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/ripple_effect"
+                                        android:layout_alignParentEnd="true">
+
+                                        <ImageView
+                                            android:id="@+id/uploadSSCLayImg"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="10dp"
+                                            android:background="@drawable/ripple_effect"
+                                            android:src="@drawable/ic_file_upload2_gray" />
+
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textViewHSC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="HSC/Alim"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="5dp"
+                                        android:text=""
+                                        android:textColor="@color/red1"
+                                        android:textSize="16sp" />
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/textViewFileNameHSCLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_border_gray_radius_10_clickable"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/textViewFileNameHSC"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_toLeftOf="@+id/uploadHSCLay"
+                                        android:text="Upload"
+                                        android:gravity="center|left"
+                                        android:maxLines="1"
+                                        android:ellipsize="middle"
+                                        android:textColor="@color/hint_color"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="0dp"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="153dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/uploadHSCLay"
+                                        android:layout_width="60dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/ripple_effect"
+                                        android:layout_alignParentEnd="true">
+
+                                        <ImageView
+                                            android:id="@+id/uploadHSCLayImg"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="10dp"
+                                            android:background="@drawable/ripple_effect"
+                                            android:src="@drawable/ic_file_upload2_gray" />
+
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textViewDiploma"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Diploma"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/textViewFileNameDiplomaLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_border_gray_radius_10_clickable"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/textViewFileNameDiploma"
+                                        android:layout_toLeftOf="@+id/uploadDiplomaLay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload"
+                                        android:gravity="center|left"
+                                        android:maxLines="1"
+                                        android:ellipsize="middle"
+                                        android:textColor="@color/hint_color"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="0dp"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="153dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/uploadDiplomaLay"
+                                        android:layout_width="60dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/ripple_effect"
+                                        android:layout_alignParentEnd="true">
+
+                                        <ImageView
+                                            android:id="@+id/uploadDiplomaLayimg"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="10dp"
+                                            android:background="@drawable/ripple_effect"
+                                            android:src="@drawable/ic_file_upload2_gray" />
+
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textViewBSC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="BSC/Honours/Fazil"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/textViewFileNameBSCLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_border_gray_radius_10_clickable"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/textViewFileNameBSC"
+                                        android:layout_toLeftOf="@+id/uploadBSCLay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload"
+                                        android:maxLines="1"
+                                        android:ellipsize="middle"
+                                        android:gravity="center|left"
+                                        android:textColor="@color/hint_color"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="0dp"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="153dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/uploadBSCLay"
+                                        android:layout_width="60dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/ripple_effect"
+                                        android:layout_alignParentEnd="true">
+
+                                        <ImageView
+                                            android:id="@+id/uploadBSCLayimg"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="10dp"
+                                            android:background="@drawable/ripple_effect"
+                                            android:src="@drawable/ic_file_upload2_gray" />
+
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textViewMSC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="MSC/Kamil"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+
+                                </LinearLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/textViewFileNameMSCLay"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="50dp"
+                                    android:background="@drawable/bg_border_gray_radius_10_clickable"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/textViewFileNameMSC"
+                                        android:layout_toLeftOf="@+id/uploadMSCLay"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:text="Upload"
+                                        android:maxLines="1"
+                                        android:ellipsize="middle"
+                                        android:gravity="center|left"
+                                        android:textColor="@color/hint_color"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="0dp"
+                                        android:textSize="16sp"
+                                        app:layout_constraintEnd_toEndOf="parent"
+                                        app:layout_constraintHorizontal_bias="1.0"
+                                        app:layout_constraintStart_toStartOf="parent"
+                                        tools:layout_editor_absoluteY="153dp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/uploadMSCLay"
+                                        android:layout_width="60dp"
+                                        android:layout_height="match_parent"
+                                        android:background="@drawable/ripple_effect"
+                                        android:layout_alignParentEnd="true">
+
+                                        <ImageView
+                                            android:id="@+id/uploadMSCLayImg"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="10dp"
+                                            android:background="@drawable/ripple_effect"
+                                            android:src="@drawable/ic_file_upload2_gray" />
+
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+
+                    <!--work experience-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:visibility="visible"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewWorlExperince"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Work Experience"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:orientation="horizontal"
+                                android:layout_marginBottom="5dp">
+
+
+                                <RelativeLayout
+                                    android:id="@+id/otherCertificateTextLay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_toStartOf="@+id/otherCertificateAddCloseLay"
+                                    android:background="@drawable/bg_border_gray_radius_10_clickable"
+                                    >
+
+                                    <TextView
+                                        android:id="@+id/otherCertificateText"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:hint="Work experience"
+                                        android:maxLines="1"
+                                        android:ellipsize="middle"
+                                        android:textColorHint="@color/hint_color"
+                                        android:layout_toStartOf="@+id/otherCertificateUploadIcon"
+                                        android:gravity="center|left"
+                                        android:background="@color/transparent"
+                                        android:textColor="@color/hint_color"
+                                        android:paddingStart="10dp"
+                                        android:paddingEnd="0dp"
+                                        android:textSize="14sp" />
+
+                                    <LinearLayout
+                                        android:id="@+id/otherCertificateUploadIcon"
+                                        android:layout_width="60dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_alignParentEnd="true"
+                                        android:background="@drawable/ripple_effect">
+                                        <ImageView
+                                            android:id="@+id/otherCertificateTextImg"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:padding="5dp"
+                                            android:src="@drawable/ic_file_upload2_gray" />
+                                    </LinearLayout>
+
+
+                                </RelativeLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/otherCertificateAddCloseLay"
+                                    android:background="@drawable/ripple_effect"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentEnd="true"
+                                    >
+
+                                    <ImageView
+                                        android:id="@+id/otherCertificateAddIcon"
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp"
+                                        android:src="@drawable/ic_add_circle_orange" />
+
+                                    <ImageView
+                                        android:id="@+id/otherCertificateCloseIcon"
+                                        android:layout_width="40dp"
+                                        android:layout_height="match_parent"
+                                        android:padding="5dp"
+                                        android:visibility="gone"
+                                        android:src="@drawable/ic_close_orange" />
+
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutContainer"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone"
+                                android:layout_marginTop="10dp" />
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rv_other_qualification"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:itemCount="1"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <!--resume-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:visibility="visible"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewResume"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Resume"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/textViewFileNameResumeLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_border_gray_radius_10_clickable"
+                            >
+
+                            <TextView
+                                android:id="@+id/textViewFileNameResume"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toStartOf="@+id/uploadIconResume"
+                                android:text="@string/upload_your_resume"
+                                android:gravity="center|left"
+                                android:textColor="@color/hint_color"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="16sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="153dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/uploadIconResume"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ripple_effect"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:id="@+id/uploadIconResumeImg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="10dp"
+                                    android:background="@drawable/ripple_effect"
+                                    android:src="@drawable/ic_file_upload2_gray" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+                    <!--passport-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewPassport"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Passport"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text="*"
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/textViewFileNamePassportLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_border_gray_radius_10_clickable"
+                            >
+
+                            <TextView
+                                android:id="@+id/textViewFileNamePassport"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:layout_toStartOf="@+id/uploadIconPassport"
+                                android:text="@string/upload_your_passport"
+                                android:gravity="center|left"
+                                android:textColor="@color/hint_color"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="16sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="153dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/uploadIconPassport"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ripple_effect"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:id="@+id/uploadIconPassportImg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="10dp"
+                                    android:background="@drawable/ripple_effect"
+                                    android:src="@drawable/ic_file_upload2_gray" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+
+                    <!--photo-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewPhoto"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Photo * -  The sizes of passport photos vary, depending on the country."
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/uploadIconPhotoTextMainLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:background="@drawable/bg_border_gray_radius_10_clickable"
+                            >
+
+                            <TextView
+                                android:id="@+id/uploadIconPhotoTextMain"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_toStartOf="@+id/uploadIconPhotoLay"
+                                android:text="@string/upload_your_photo"
+                                android:gravity="center|left"
+                                android:maxLines="1"
+                                android:ellipsize="middle"
+                                android:textColor="@color/hint_color"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:textSize="16sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="153dp" />
+
+                            <LinearLayout
+                                android:id="@+id/uploadIconPhotoLay"
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:gravity="center"
+                                android:layout_alignParentEnd="true"
+                                android:orientation="vertical">
+
+
+
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:id="@+id/uploadIconPhotoImg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/bayzid"
+                                    android:layout_margin="10dp"
+                                    android:visibility="gone"
+                                    app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+                                    app:strokeColor="@color/app_orange"
+                                    app:strokeWidth="1dp" />
+
+                                <LinearLayout
+                                    android:id="@+id/uploadIconPhotoIcon"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/ripple_effect">
+
+                                    <ImageView
+                                        android:id="@+id/uploadIconPhotoIconMain"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:padding="10dp"
+                                        android:background="@drawable/ripple_effect"
+                                        android:src="@drawable/ic_file_upload2_gray" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <!--                    driving licence-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_marginTop="20dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textViewDrivingLicense"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Driving License(If Any)"
+                                android:textColor="@color/black"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:text=""
+                                android:textColor="@color/red1"
+                                android:textSize="16sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/textViewFileNameDrivingLicenseLay"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="@drawable/bg_border_gray_radius_10_clickable"
+                            >
+
+                            <TextView
+                                android:id="@+id/textViewFileNameDrivingLicense"
+                                android:layout_width="match_parent"
+                                android:layout_height="80dp"
+                                android:gravity="center|left"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="0dp"
+                                android:text="Upload your driving license"
+                                android:textColor="@color/hint_color"
+                                android:textSize="16sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="1.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="153dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/uploadIconDrivingLicense"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/ripple_effect"
+                                android:layout_alignParentEnd="true">
+
+                                <ImageView
+                                    android:id="@+id/uploadIconDrivingLicenseImg"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:padding="10dp"
+                                    android:background="@drawable/ripple_effect"
+                                    android:src="@drawable/ic_file_upload2_gray" />
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                    <!--                        register btn-->
+                    <LinearLayout
+                        android:id="@+id/applyVisaBtnStudentLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/applyVisaBtnStudent"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:height="45dp"
+                            android:background="@drawable/bg_btn_gray12_shpa_10"
+                            android:text="@string/submit"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            tools:layout_editor_absoluteY="315dp" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <!-- Loading State -->
+
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:indeterminateTint="@color/app_orange" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

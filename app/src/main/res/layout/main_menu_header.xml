@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/app_orange"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="bottom">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/abbas"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Abbas"
+        android:scaleType="centerCrop"
+        android:background="@drawable/bg_border_dark_radius_10" />
+
+    <!-- User Name -->
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abbas Talukdar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Email or Additional Information -->
+    <TextView
+        android:id="@+id/textViewUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="abbas@shetab.tech"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal" />
+
+
+    <!-- Email or Additional Information -->
+    <TextView
+        android:id="@+id/textViewUserRole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HR Admin"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

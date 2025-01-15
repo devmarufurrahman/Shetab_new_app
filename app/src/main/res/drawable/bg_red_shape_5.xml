@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+android:color="@color/ripple_material_light"> <!-- Ripple color -->
+
+<item>
+    <shape android:shape="rectangle">
+        <solid android:color="@color/red1" />
+        <corners android:radius="5dp" />
+    </shape>
+</item>
+
+<item>
+    <selector>
+        <item>
+            <shape android:shape="rectangle">
+                <solid android:color="@android:color/transparent" /> <!-- Background of the ripple -->
+                <corners android:radius="5dp" />
+            </shape>
+        </item>
+    </selector>
+</item>
+</ripple>
+

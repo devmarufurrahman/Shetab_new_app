@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--    <stroke android:color="@color/app_orange"  android:width="2dp" />-->
+<!--    <corners android:radius="10dp" />-->
+<!--    <solid android:color="@color/white"/>-->
+
+<!--</shape>-->
+
+
+
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/ripple_material_light"> <!-- Ripple color -->
+
+    <item android:id="@android:id/mask">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+    <item>
+        <selector>
+            <item>
+                <shape android:shape="rectangle">
+                    <stroke android:color="@color/app_orange"  android:width="2dp" />
+                    <corners android:radius="10dp" />
+                    <solid android:color="@color/white" /> <!-- Background of the ripple -->
+                </shape>
+            </item>
+        </selector>
+    </item>
+</ripple>
