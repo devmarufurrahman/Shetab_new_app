@@ -3,7 +3,7 @@
     <style name="Base.Theme.Shetab" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="android:statusBarColor">@color/app_orange_halka</item>
+        <item name="android:statusBarColor">@color/app_blue</item>
     </style>
 
     <style name="Theme.Shetab" parent="Base.Theme.Shetab" />

@@ -6,6 +6,7 @@ import android.util.Log
 import com.shetab.main.R
 import com.shetab.main.adapter.Service
 import com.shetab.main.ui.activity.ApplyVisaActivity
+import com.shetab.main.ui.activity.FaqActivity
 
 object HomeService {
 
@@ -15,9 +16,9 @@ object HomeService {
                 // Action for "Apply Visa"
                 context.startActivity(Intent(context, ApplyVisaActivity::class.java))
             }
-            "হাঁসপাতাল" -> {
-                // Action for "হাঁসপাতাল"
-//                startActivity(Intent(this, HospitalActivity::class.java))
+            context.getString(R.string.faq) -> {
+                // Action for "FAQ"
+                context.startActivity(Intent(context, FaqActivity::class.java))
             }
             "ব্লাড ডোনার" -> {
                 // Action for "ব্লাড ডোনার"
