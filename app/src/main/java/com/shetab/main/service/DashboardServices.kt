@@ -3,6 +3,7 @@ package com.shetab.main.service
 import android.content.Context
 import android.content.Intent
 import android.util.Log
+import android.widget.Toast
 import com.shetab.main.R
 import com.shetab.main.adapter.Service
 import com.shetab.main.ui.activity.ApplyVisaActivity
@@ -27,6 +28,7 @@ object HomeService {
             else -> {
                 // Default action or a message
                 Log.d("ServiceClick", "Unknown service: ${service.name}")
+                Toast.makeText(context, "Coming Soon: ${service.name}", Toast.LENGTH_SHORT).show()
             }
         }
     }
