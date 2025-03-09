@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_live_chat_msg"
+            android:padding="10dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bayzid"
+                    app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+                    app:strokeColor="@color/app_orange"
+                    app:strokeWidth="1dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bayzid Hasan"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sort_msg"
+                    android:textStyle="normal"
+                    android:textSize="12sp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/bg_live_chat_msg_team"
+                android:padding="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_account_circle_white"
+                        app:shapeAppearanceOverlay="@style/CircularShapeAppearance"
+                        app:strokeColor="@color/app_orange"
+                        app:strokeWidth="1dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ItemViewLay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_effect"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/team_member"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/message_text_viewLay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/ripple_effect"
+                        >
+                        <TextView
+                            android:id="@+id/message_text_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hello"
+                            android:textStyle="normal"
+                            android:textSize="12sp"
+                            android:textColor="@color/white"
+                            />
+
+                        <ImageView
+                            android:id="@+id/file_icon"
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:layout_height="100dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -8,6 +8,7 @@ import com.shetab.main.R
 import com.shetab.main.adapter.Service
 import com.shetab.main.ui.activity.ApplyVisaActivity
 import com.shetab.main.ui.activity.FaqActivity
+import com.shetab.main.ui.activity.LiveChatPage
 
 object HomeService {
 
@@ -21,9 +22,9 @@ object HomeService {
                 // Action for "FAQ"
                 context.startActivity(Intent(context, FaqActivity::class.java))
             }
-            "ব্লাড ডোনার" -> {
-                // Action for "ব্লাড ডোনার"
-//                startActivity(Intent(this, BloodDonorActivity::class.java))
+            context.getString(R.string.live_chat) -> {
+                // Action for "Live Chat"
+                context.startActivity(Intent(context, LiveChatPage::class.java))
             }
             else -> {
                 // Default action or a message
